@@ -1,0 +1,54 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Name of the app -->
+		<title>Camera App</title>
+
+		<!-- Link to main style sheet -->
+		<link rel="stylesheet" href="style.css"> 
+	</head>
+	<body>
+
+  <!-- Camera -->
+  <div class="card--target" id="card--target--top-left">
+  </div>
+  <div class="card--target" id="card--target--top-right">
+  </div>
+  <div class ="card--target" id="card--target--bottom-left">
+  </div>
+  <div class="card--target" id="card--target--bottom-right">
+  </div>
+  <main id="camera">
+
+  <!-- CheckMark -->
+  <img id="check-mark" class="invisible" src="assets/icons8-checkmark.svg">
+
+  <!-- Camera sensor -->
+  <canvas id="camera--sensor"></canvas>
+
+  <!-- Camera view -->
+  <video id="camera--view" autoplay playsinline></video>
+
+  <!-- Camera output -->
+  <img src="//:0" alt="" id="camera--output">
+
+  <!-- Camera trigger -->
+  <button id="camera--trigger">Take a picture </button>
+
+  </main>
+
+  <!-- Reference to your JavaScript file -->
+  <script src="app.js"></script>
+  
+  <script src='https://unpkg.com/tesseract.js@1.0.19/src/index.js'></script>
+  <script src='https://cdn.jsdelivr.net/gh/naptha/tesseract.js@v1.0.14/dist/tesseract.min.js'></script>
+
+  
+  <!-- Reference to adapter.js -->
+  <script src="adapter-min.js"></script>
+
+  </body>
+</html>
